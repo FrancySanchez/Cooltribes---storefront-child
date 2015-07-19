@@ -22,7 +22,10 @@ body
 
 .menu_top
 {
-    background-color: #040404;
+    background-color: #000000;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
     ul.menu
     {
         display: inline-block;
@@ -50,16 +53,36 @@ body
 
         border-left: 1px;
     }
+    .site-header-cart .cart-contents
+    {
+        padding: 1em 2.244em;
+    }
+    .site-header-cart .cart-contents:after {
+        right: 0.618em;
+        line-height: 3.55;
+    }
 }
 
-.site-header{
+.site-header
+{
     border-bottom: 1px solid #ddd;
 }
 
-@media screen and (min-width: 768px){
+.woocommerce-active .site-header .main-navigation {
+  width: 72.9130434783%;
+  float: right;
+  margin-right: 0.347826087%;
+  padding-top:1px;
+}
 
-    .woocommerce-active .site-header .secondary-navigation{
+
+
+@media screen and (min-width: 768px)
+{
+    .woocommerce-active .site-header .secondary-navigation
+    {
         float: right ;
+
         margin-right: 0;
     }
 }
