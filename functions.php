@@ -83,13 +83,66 @@ function custom_before_header() {
 			<?php do_action( 'custom_secondaryMenu' ); ?>
 			<?php do_action( 'custom_cart' ); ?>
 		</div>
-		</div>
+		</div>		
 	<?php
 }
 
 
 
 /*-----  End of Agrupando el secondary menu y el icono del carrito en un <div>  ------*/
+
+/*================================================
+=            Desactivando los reviews            =
+================================================*/
+// Referencia: https://support.woothemes.com/hc/en-us/articles/203447633-How-to-Disable-Product-Reviews
+add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
+	function wcs_woo_remove_reviews_tab($tabs) {
+	 unset($tabs['reviews']);
+	 return $tabs;
+}
+
+/*-----  End of Desactivando los reviews  ------*/
+
+
+/*====================================================================
+=            Agregando archivo JS donde estan los scripts            =
+====================================================================*/
+// Referencia: https://codex.wordpress.org/Function_Reference/wp_enqueue_script
+/**
+ * Proper way to enqueue scripts and styles
+ */
+function my_custom_scripts() {
+		// jQuery UI
+		wp_enqueue_script( 'jquery-ui', '//code.jquery.com/ui/1.11.4/jquery-ui.min.js', array(), '1.0.0', true );
+
+		// Custom scripts
+		wp_enqueue_script( 'custom-child-scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array(), '1.0.0', true );
+
+}
+
+add_action( 'wp_enqueue_scripts', 'my_custom_scripts' );
+
+/*-----  End of Agregando archivo JS donde estan los scripts  ------*/
+
+/*==============================================
+=            Agregando modal window            =
+==============================================*/
+function agregando_modal_window_producto() {
+	add_action( 'woocommerce_after_main_content', 'custom_modal_window_producto' );
+}
+add_action( 'init', 'agregando_modal_window_producto' );
+
+function custom_modal_window_producto() {
+	?>
+	<div id="jquery-ui-product-dialog" title="Basic dialog" style="width: auto; min-height: 117px; max-height: none; height: auto; padding: 40px;background: rgb(255, 255, 255);width: 600px;border: 1px solid #ddd; display:none">
+	  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+	</div>	
+	<?php
+}
+
+
+
+/*-----  End of Agregando modal window  ------*/
 
 
 

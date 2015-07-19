@@ -8,43 +8,64 @@
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/style\.scss}line{font-family:\0000313}}
+/**
+*
+* header styles
+*
+**/
+/**
+*
+* _navigation
+*
+**/
+/**
+*
+* _content
+*
+**/
+@media screen and (min-width: 768px) {
+  .content-area {
+    float: right;
+    margin-right: 0;
+    margin-left: 4.347826087%; }
+
+  .widget-area {
+    float: left; } }
+/**
+*
+* Footer
+*
+**/
 body {
   font-family: 'Open Sans', sans-serif; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/style\.scss}line{font-family:\0000318}}
 .site-header {
   background-color: #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/style\.scss}line{font-family:\0000323}}
 .menu_top {
   background-color: #040404; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/style\.scss}line{font-family:\0000326}}
   .menu_top ul.menu {
     display: inline-block;
     float: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/style\.scss}line{font-family:\0000331}}
   .menu_top .main-navigation {
     padding-top: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/style\.scss}line{font-family:\0000335}}
   .menu_top .main-navigation ul.menu > li > a {
     font-size: 13px;
     font-weight: 600;
     padding: 1em;
     color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/style\.scss}line{font-family:\0000344}}
   .menu_top ul li {
     display: table-cell;
     text-align: right;
     vertical-align: middle;
     border-left: 1px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/style\.scss}line{font-family:\0000355}}
 .site-header {
   border-bottom: 1px solid #ddd; }
 
 @media screen and (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/style\.scss}line{font-family:\0000361}}
   .woocommerce-active .site-header .secondary-navigation {
     float: right;
     margin-right: 0; } }
+
+/*# sourceMappingURL=style.css.map */
