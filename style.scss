@@ -8,8 +8,6 @@
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
-
-
 body
 {
     font-family: 'Open Sans', sans-serif;
@@ -18,13 +16,22 @@ body
 .site-header
 {
     background-color: #fff;
+    padding: 45px 0 20px;
 }
+
 
 .menu_top
 {
-    background-color: #000000;
-    padding-top: 1px;
-    padding-bottom: 1px;
+.col-full {
+  max-width: 80.141em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+    background-color: #000;
+a{
+    color:#d2d3d7;
+}
 
     ul.menu
     {
@@ -55,12 +62,26 @@ body
     }
     .site-header-cart .cart-contents
     {
-        padding: 1em 2.244em;
+          padding: 20px 40px 20px;
     }
-    .site-header-cart .cart-contents:after {
-        right: 0.618em;
-        line-height: 3.55;
+    .site-header-cart .cart-contents:after
+    {
+        line-height: 66px;
+        right: 19px;
     }
+    .secondary-navigation .menu a
+    {
+        font-weight: 400;
+
+        padding: 19px 20px 10px;
+
+        color: #d2d3d7;
+    }
+}
+
+.secondary-navigation
+{
+    margin: 0;
 }
 
 .site-header
@@ -68,13 +89,24 @@ body
     border-bottom: 1px solid #ddd;
 }
 
-.woocommerce-active .site-header .main-navigation {
-  width: 72.9130434783%;
-  float: right;
-  margin-right: 0.347826087%;
-  padding-top:1px;
+.woocommerce-active .site-header .main-navigation
+{
+    float: right;
+    width: 72.9130434783%;
+    margin-right: .347826087%;
+    padding-top: 1px;
 }
 
+.custom_logo
+{
+    float: left;
+    width: 20%;
+}
+
+.woocommerce-active .site-header .main-navigation
+{
+    clear: none;
+}
 
 
 @media screen and (min-width: 768px)
@@ -85,4 +117,36 @@ body
 
         margin-right: 0;
     }
+    .site-branding, .site-search, .site-header-cart, .site-logo-anchor 
+    {
+  margin-bottom: 0;
+    }
+}
+
+.main-navigation a
+{
+    color: #000;
+}
+
+.primary-navigation
+{
+    ul.menu li.current-menu-item > a
+    {
+        padding-bottom: 2px;
+
+        color: #000;
+        border-bottom: 3px solid #11cb9a;
+    } 
+}
+.main-navigation ul li a:hover
+    {
+        color: #11cb9a;
+    }
+
+.main-navigation ul, .secondary-navigation ul {
+
+  padding: 10px 0px 10px;
+}   
+a:focus {
+  outline: 0px;
 }
