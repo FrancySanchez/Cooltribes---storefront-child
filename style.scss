@@ -1,0 +1,65 @@
+/*
+ Theme Name:   Cooltribes shop theme
+ Description:  Storefront Child Theme
+ Author:       Francy Sanchez
+ Author URI:   http://cooltribes.com
+ Template:     storefront
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.site-header
+{
+    background-color: #fff;
+}
+
+.menu_top
+{
+    background-color: #040404;
+    ul.menu
+    {
+        display: inline-block;
+        float: right;
+    }
+    .main-navigation
+    {
+        padding-top: 0;
+    }
+    .main-navigation ul.menu > li > a
+    {
+        font-size: 13px;
+        font-weight: 600;
+
+        padding: 1em;
+
+        color: white;
+    }
+    ul li
+    {
+        display: table-cell;
+
+        text-align: right;
+        vertical-align: middle;
+
+        border-left: 1px;
+    }
+}
+
+.site-header{
+    border-bottom: 1px solid #ddd;
+}
+
+@media screen and (min-width: 768px){
+
+    .woocommerce-active .site-header .secondary-navigation{
+        float: right ;
+        margin-right: 0;
+    }
+}
