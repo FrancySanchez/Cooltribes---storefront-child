@@ -24,14 +24,21 @@ add_filter( 'storefront_customizer_enabled', 'woa_storefront_disable_customizer'
 add_action( 'init', 'storefront_custom_logo' );
 function storefront_custom_logo() {
 remove_action( 'storefront_header', 'storefront_site_branding', 20 );
+remove_action( 'storefront_header', 'storefront_skip_links', 0 );
+add_action( 'custom_storefront_skip_links', 'storefront_skip_links' );
+
 add_action( 'storefront_header', 'storefront_display_custom_logo', 20 );
 }
 
 function storefront_display_custom_logo() {
 ?>
-<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-logo-link" rel="home">
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.jpg" alt="<?php echo get_bloginfo( 'name' ); ?>" />
-</a>
+<div class="my clase">
+	<?php do_action( 'custom_storefront_skip_links' ); ?>
+	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-logo-link" rel="home">
+	<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.jpg" alt="<?php echo get_bloginfo( 'name' ); ?>" />
+
+	</a>
+</div>
 <?php
 }
 
