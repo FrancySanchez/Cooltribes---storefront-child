@@ -3,3 +3,54 @@
 * header styles
 *
 **/
+.site-header
+{
+    padding: 45px 0 20px;
+
+    background-color: #fff;
+}
+
+.site-header
+{
+    border-bottom: 1px solid #ddd;
+}
+
+.woocommerce-active .site-header .main-navigation
+{
+    float: right;
+
+    width: 72.9130434783%;
+    margin-right: .347826087%;
+    padding-top: 1px;
+}
+
+.custom_logo
+{
+    float: left;
+
+    width: 20%;
+}
+
+.woocommerce-active .site-header .main-navigation
+{
+    clear: none;
+}
+
+
+@media screen and (min-width: 768px)
+{
+    .woocommerce-active .site-header .secondary-navigation
+    {
+        float: right ;
+
+        margin-right: 0;
+    }
+
+    .site-branding,
+    .site-search,
+    .site-header-cart,
+    .site-logo-anchor
+    {
+        margin-bottom: 0;
+    }
+}
