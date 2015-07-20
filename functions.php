@@ -134,7 +134,13 @@ add_action( 'init', 'agregando_modal_window_producto' );
 
 function custom_modal_window_producto() {
 	?>
-	<div id="jquery-ui-product-dialog" title="Basic dialog" style="width: auto; min-height: 117px; max-height: none; height: auto; padding: 40px;background: rgb(255, 255, 255);width: 600px;border: 1px solid #ddd; display:none">
+	<div id="jquery-ui-product-dialog" class="modalProduct" title="Stoff Details" style="min-height: 117px; max-height: none; height: auto; padding: 40px;background: rgb(255, 255, 255);width: 600px;border: 1px solid #ddd; display:none">
+		
+		<div id="js-modal-image"></div>
+		<h3 id="js-modal-title"> </h3>
+		<hr>
+		<div id="js-modal-description"></div>
+		<a id="js-modal-link" href="" title="" class="button">Diese stoff whälen</a>
 	  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
 	</div>	
 	<?php
