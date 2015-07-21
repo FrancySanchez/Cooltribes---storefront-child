@@ -140,11 +140,36 @@ a:focus {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\0000312}}
   .widget-area {
     float: left; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\0000317}}
+body {
+  background-color: #FFFFFF; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\0000321}}
+.modalProduct {
+  min-height: 200px;
+  max-height: none;
+  height: auto;
+  padding: 40px;
+  background: white;
+  width: 600px;
+  border: 1px solid #ddd;
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\0000333}}
+a {
+  color: #11cb9a; }
+
 /**
 *
 * Footer
 *
 **/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_footer\.scss}line{font-family:\000037}}
+.site-footer {
+  background-color: #060606;
+  color: #93979f;
+  padding: 1.618em 0; }
+
 /**
 *
 * _sidebar
@@ -157,11 +182,15 @@ a:focus {
   background-color: #EFF0F2; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_sidebar\.scss}line{font-family:\0000312}}
+.widget-area .widget_layered_nav li:before {
+  content: ""; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_sidebar\.scss}line{font-family:\0000316}}
 .widget-area .widget a {
   color: #000000;
   font-weight: 400; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_sidebar\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_sidebar\.scss}line{font-family:\0000321}}
 .widget h3.widget-title {
   font-size: 10pt;
   letter-spacing: 0;
@@ -170,9 +199,19 @@ a:focus {
   margin-bottom: 1em;
   font-weight: 700; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_sidebar\.scss}line{font-family:\0000325}}
-.widget_layered_nav li:before {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_sidebar\.scss}line{font-family:\0000330}}
+.widget_product_categories li {
+  margin-bottom: .618em;
+  border: 1px solid #EFF0F2;
+  background-color: #EFF0F2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_sidebar\.scss}line{font-family:\0000335}}
+.widget-area .widget_product_categories ul li:before {
   content: ""; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_sidebar\.scss}line{font-family:\0000340}}
+.widget-area .widget a:hover {
+  color: #11cb9a; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/style\.scss}line{font-family:\0000322}}
 body {
