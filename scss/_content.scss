@@ -21,7 +21,7 @@ body {
 .modalProduct{ 
 	min-height: 200px; 
 	max-height: none; 
-	height: auto; 
+	height: 100%; 
 	padding: 40px;
 	background: rgb(255, 255, 255);
 	width: 600px;
@@ -29,7 +29,18 @@ body {
 	display:none
 }
 
-
 a {
   color: #11cb9a;
   }
+
+.modalProduct element.style {
+  width: none;
+  height: none;
+}
+
+
+.columna25{
+	width: 24%;
+	display: inline-block;
+
+}

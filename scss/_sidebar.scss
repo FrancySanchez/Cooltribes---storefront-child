@@ -40,3 +40,7 @@
 .widget-area .widget a:hover {
   color: #11cb9a;
 }
+
+.widget.woocommerce li .count {
+  display: none;
+}
