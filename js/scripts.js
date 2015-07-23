@@ -25,7 +25,8 @@
 
 		 // Modal window usando jQuery UI, ref: http://api.jqueryui.com/dialog/
 		 $( "#jquery-ui-product-dialog" ).dialog({
-				width: 500,
+				width: 700,
+				closeText: "X",
 
 				close: function (e) {
 				

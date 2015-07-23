@@ -102,12 +102,15 @@ function custom_modal_window_producto() {
 	?>
 	<div id="jquery-ui-product-dialog" class="modalProduct" title="Stoff Details">
 		
-		<div id="js-modal-image" class="modalimaget"></div>
-		<h3 id="js-modal-title" class="modaltitle"> </h3>
-		<hr>
-		<div id="js-modal-description"></div>
-		<a id="js-modal-link" href="" title="" class="button">Diese stoff whälen</a>
-	
+		<div id="js-modal-image" class="modalimage columna45"></div>
+		
+		<div class="columna45">
+			<h3 id="js-modal-title" class="modaltitle "> </h3>
+				<hr>
+				<div id="js-modal-description"></div>
+				<a id="js-modal-link" href="" title=""
+				class="button modalbottom">Diese stoff whälen</a>
+		</div>
 	</div>	
 	<?php
 }

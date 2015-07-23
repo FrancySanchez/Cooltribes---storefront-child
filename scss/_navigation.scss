@@ -6,6 +6,7 @@
 .menu_top
 {
     background-color: #000;
+
     .col-full
     {
         max-width: 80.141em;
@@ -97,4 +98,10 @@
 a:focus
 {
     outline: 0;
+}
+
+.col-full {
+  max-width: 74.141em;
+  margin-left: auto;
+  margin-right: auto;
 }

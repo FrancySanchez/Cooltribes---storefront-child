@@ -3,44 +3,125 @@
 * _content
 *
 **/
-@media screen and (min-width: 768px){
-	.content-area{
-		float: right;
-		margin-right: 0;
-		margin-left: 4.347826087%;
-	}
-	.widget-area{
-		float: left;
-	}
+@media screen and (min-width: 768px)
+{
+    .content-area
+    {
+        float: right;
 
+        margin-right: 0;
+        margin-left: 4.347826087%;
+    }
+    .widget-area
+    {
+        float: left;
+    }
 }
-body {
-  background-color: #FFFFFF;
+body
+{
+    background-color: #fff;
+}
+/*--------------------------MODAL----------------------------------*/
+
+.modalProduct
+{
+    display: none;
+
+    width: 600px;
+    height: 100%;
+    min-height: 200px;
+    max-height: none;
+    padding: 0;
+
+    border: 1px solid #ddd;
+    background: rgb(255, 255, 255);
+    h3
+    {
+        font-size: 1.87em;
+
+        border-bottom: 1px solid #ccc;
+    }
+    .columna45
+    {
+        display: table-cell;
+
+        width: 45%;
+
+        vertical-align: top;
+    }
+    img
+    {
+        padding: 20px 30px 20px;
+    }
+}
+.ui-dialog-titlebar-close
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.ui-dialog-titlebar
+{
+    font-size: 18px;
+
+    padding: 10px 10px 0;
+
+    color: #000;
+    background-color: rgb(240, 239, 239);
 }
 
-.modalProduct{ 
-	min-height: 200px; 
-	max-height: none; 
-	height: 100%; 
-	padding: 40px;
-	background: rgb(255, 255, 255);
-	width: 600px;
-	border: 1px solid #ddd; 
-	display:none
+a
+{
+    color: #11cb9a;
 }
 
-a {
-  color: #11cb9a;
-  }
-
-.modalProduct element.style {
-  width: none;
-  height: none;
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'],
+.button,
+.added_to_cart .added_to_cart
+{
+    border-color: #11cb9a;
+    background-color: #11cba5;
+}
+.button:focus,
+.added_to_cart:focus
+{
+    outline: none;
 }
 
 
-.columna25{
-	width: 24%;
-	display: inline-block;
+/*------------- PAGE Anzug designen -------------------*/
+.columna25
+{
+    display: table-cell;
 
+    width: 24%;
+
+    vertical-align: middle;
+}
+
+.designenImag
+{
+    padding: 10px 70px 10px;
+}
+.designenImag:hover{
+	img{
+	border: 5px solid #A6A8A7;
+}
+}
+
+.designentext
+{
+    padding: 10px 10px 10px;
+}
+
+.hentry .entry-header h1
+{
+    margin-bottom: 3px;
+    padding-bottom: 0;
+
+    border-bottom: 0;
 }
