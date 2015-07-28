@@ -116,5 +116,50 @@ function custom_modal_window_producto() {
 }
 /*-----  End of Agregando modal window  ------*/
 
+/*=====================================================
+=            remove single product sidebar            =
+=====================================================*/
+
+function remove_storefront_sidebar() {
+	if ( is_product() ) {
+		remove_action( 'storefront_sidebar', 'storefront_get_sidebar',			10 );
+	}
+}
+add_action( 'get_header', 'remove_storefront_sidebar' );
+
+
+/*-----  End of remove single product sidebar  ------*/
+
+
+/*=================================================================
+=            Agregando imagenes al preview de producto            =
+=================================================================*/
+
+function agregar_imagenes_al_preview_de_producto() {
+
+	add_action( 'woocommerce_product_thumbnails', 'html_para_imagenes_del_preview' );
+}
+add_action( 'init', 'agregar_imagenes_al_preview_de_producto' );
+
+function html_para_imagenes_del_preview() {
+	?>
+	Aqui van las imagenes del preview
+
+	<div class="js-previewImagenes">
+		Suit image
+		<ul>
+			<li></li>
+		</ul>
+	</div>
+
+	<?php
+}
+
+
+
+/*-----  End of Agregando imagenes al preview de producto  ------*/
+
+
+
 
 

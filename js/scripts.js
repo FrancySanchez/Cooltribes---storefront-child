@@ -2,7 +2,10 @@
 
 (function($) { 
 
+	// Modal para mostrar un preview de la tela de los trajes antes de ir a la pantalla de configurar productos
 	jQuery('.tax-product_cat .product a').click(function(event){
+
+		// Deteniendo el evento on.click
 		 event.preventDefault();
 
 		 // Variables
@@ -40,6 +43,39 @@
 		 });
 
 	});
-	
+
+	// Agregando imagenes al preview del traje  
+	// en la pagina de configuracion del traje
+	// var arrayOfPreviewImages = new Array();
+	// $('.entry-summary .mspc-accordion .mspc-variation').click(function(event){
+	// 	var 
+
+	// 		imageObject = $(this).find('img'),
+	// 		imageURL = $(this).find('img').attr('href'),
+	// 		previewImages = $('.js-previewImagenes');
+
+	// 	// Si no está
+	// 	if ($.inArray( imageURL, arrayOfPreviewImages) == -1) {
+	// 		arrayOfPreviewImages.push(imageURL); 
+	// 		$(imageObject).clone().appendTo('.js-previewImagenes');
+	// 		console.log(arrayOfPreviewImages);
+	// 	}
+	// 	else{
+	// 		console.log('Si esta');
+	// 		console.log(arrayOfPreviewImages);
+	// 	};
+		
+	// });
+
+	$( ".mspc-variations" ).each(function( index ) {
+
+		var mainClass = $(this).attr('class'),
+			mainClass = mainClass.replace(/ /g,"_");
+
+			mainClass.wrap('<div></div>').appendTo('.js-previewImagenes');
+
+  			console.log( index + ": " + mainClass );
+
+	});
 	
 })( jQuery );

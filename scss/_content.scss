@@ -107,10 +107,12 @@ input[type='submit'],
 {
     padding: 10px 70px 10px;
 }
-.designenImag:hover{
-	img{
-	border: 5px solid #A6A8A7;
-}
+.designenImag:hover
+{
+    img
+    {
+        border: 5px solid #a6a8a7;
+    }
 }
 
 .designentext
@@ -124,4 +126,38 @@ input[type='submit'],
     padding-bottom: 0;
 
     border-bottom: 0;
+}
+
+// Product page
+
+.single-product
+{
+    .widget-area
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    body.single-product
+    {
+        .widget-area
+        {
+            display: none;
+        }
+        .content-area
+        {
+            width: 100%;
+        }
+         div.product .images{
+         	  float: right !important;
+			  margin-left: 5.8823529412% ;
+			  margin-right: 0 !important;
+			  width: 31.1764705882% ;
+         }
+         div.product .summary {
+         	width: 62.9411764706%;
+         }
+    }
 }
