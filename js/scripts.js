@@ -47,35 +47,45 @@
 	// Agregando imagenes al preview del traje  
 	// en la pagina de configuracion del traje
 	// var arrayOfPreviewImages = new Array();
-	// $('.entry-summary .mspc-accordion .mspc-variation').click(function(event){
-	// 	var 
-
-	// 		imageObject = $(this).find('img'),
-	// 		imageURL = $(this).find('img').attr('href'),
-	// 		previewImages = $('.js-previewImagenes');
-
-	// 	// Si no está
-	// 	if ($.inArray( imageURL, arrayOfPreviewImages) == -1) {
-	// 		arrayOfPreviewImages.push(imageURL); 
-	// 		$(imageObject).clone().appendTo('.js-previewImagenes');
-	// 		console.log(arrayOfPreviewImages);
-	// 	}
-	// 	else{
-	// 		console.log('Si esta');
-	// 		console.log(arrayOfPreviewImages);
-	// 	};
+	
+	$( document ).ready(function() {
+		var previewlist = $('.js-previewImagenes');
 		
-	// });
+		$.each($('.mspc-variations'), function( index, value ) {
 
-	$( ".mspc-variations" ).each(function( index ) {
+			var mainClass = $(this).attr('class'),
+				mainClass = mainClass.replace(/ /g,"_");
+				// console.log( index + ": " + mainClass );
+				$(this).attr('data-js', mainClass);
 
-		var mainClass = $(this).attr('class'),
-			mainClass = mainClass.replace(/ /g,"_");
+				//$('.js-previewImagenes ul').append( ' <li data-js="'+ mainClass + '"></li> ');
 
-			mainClass.wrap('<div></div>').appendTo('.js-previewImagenes');
+				var varOptions = $(this).find('.mspc-variation');
+				
+				$( varOptions ).click(function() {
+					imageObject = $(this).find('img'),
+					imageURL = $(this).find('img').attr('src');
+					//imageParent = $(imageObject).closest('.mspc-variations').at tr('data-js');
+					var img = $(this).find('img').clone().addClass(mainClass);
+				 	//alert(imageParent);
+				 	var existing = previewlist.find('.'+mainClass);
+				 	if (existing.length) {
+				 	 existing.replaceWith(img);
+				 	} else {
+				 		previewlist.append(img);
+				 	}
 
-  			console.log( index + ": " + mainClass );
+						// if ($('.js-previewImagenes ul').attr('data-js') == imageParent ) {
 
+						// 	this.apped(imageObject);
+
+						// };
+
+				});
+
+			});
+
+		
 	});
 	
 })( jQuery );

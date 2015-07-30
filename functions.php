@@ -146,20 +146,13 @@ function html_para_imagenes_del_preview() {
 	Aqui van las imagenes del preview
 
 	<div class="js-previewImagenes">
-		Suit image
+		
 		<ul>
-			<li></li>
+			
 		</ul>
 	</div>
 
 	<?php
 }
 
-
-
 /*-----  End of Agregando imagenes al preview de producto  ------*/
-
-
-
-
-
