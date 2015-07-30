@@ -106,7 +106,6 @@ function custom_modal_window_producto() {
 		
 		<div class="columna45">
 			<h3 id="js-modal-title" class="modaltitle "> </h3>
-				<hr>
 				<div id="js-modal-description"></div>
 				<a id="js-modal-link" href="" title=""
 				class="button modalbottom">Diese stoff whälen</a>
@@ -142,14 +141,30 @@ function agregar_imagenes_al_preview_de_producto() {
 add_action( 'init', 'agregar_imagenes_al_preview_de_producto' );
 
 function html_para_imagenes_del_preview() {
+	//Aqui van las imagenes del preview
 	?>
-	Aqui van las imagenes del preview
-
 	<div class="js-previewImagenes">
 		Suit image
+
+		<img class="img_traje" src="<?php echo get_stylesheet_directory_uri(); ?>/img/Traje.jpg" >
+		<div class="diseno_traje">
+		  Jacket
 		<ul>
-			<li></li>
+			<li><img class="piesas" src="http://placehold.it/100x100"></li>
+			<li><img src="http://placehold.it/100x100"></li>
+			<li><img src="http://placehold.it/100x100"></li>
 		</ul>
+			
+		</div>
+		<div class="diseno_traje">
+		  Hose
+		<ul>
+			<li><img class="piesas" src="http://placehold.it/100x100"></li>
+			<li><img src="http://placehold.it/100x100"></li>
+			<li><img src="http://placehold.it/100x100"></li>
+		</ul>
+			
+		</div>
 	</div>
 
 	<?php

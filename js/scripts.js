@@ -67,15 +67,15 @@
 		
 	// });
 
-	$( ".mspc-variations" ).each(function( index ) {
+	//$( ".mspc-variations" ).each(function( index ) {
 
-		var mainClass = $(this).attr('class'),
-			mainClass = mainClass.replace(/ /g,"_");
+	//	var mainClass = $(this).attr('class'),
+	//		mainClass = mainClass.replace(/ /g,"_");
 
-			mainClass.wrap('<div></div>').appendTo('.js-previewImagenes');
+	//		mainClass.wrap('<div></div>').appendTo('.js-previewImagenes');
 
-  			console.log( index + ": " + mainClass );
+  	//		console.log( index + ": " + mainClass );
 
-	});
+	//});
 	
 })( jQuery );
