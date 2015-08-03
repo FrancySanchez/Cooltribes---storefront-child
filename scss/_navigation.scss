@@ -6,6 +6,11 @@
 .menu_top
 {
     background-color: #000;
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 
     .col-full
     {

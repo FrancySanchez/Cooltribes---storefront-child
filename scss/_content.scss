@@ -38,8 +38,10 @@ body
     h3
     {
         font-size: 16px;
+
+        padding: 20px 0 15px 0;
+
         border-bottom: 1px solid #ccc;
-        padding: 20px 0px 15px 0px
     }
     .columna45
     {
@@ -53,13 +55,17 @@ body
     {
         padding: 20px 30px 20px;
     }
+    .button{
+    	margin: 20px 0;
+    }
 }
 .ui-dialog-titlebar-close
 {
     position: absolute;
-  top: 10px;
-  right: 14px;
-  padding: 5px 10px 7px 10px;
+    top: 10px;
+    right: 14px;
+
+    padding: 5px 10px 7px 10px;
 }
 .ui-dialog-titlebar
 {
@@ -151,31 +157,64 @@ input[type='submit'],
         {
             width: 100%;
         }
-         div.product .images{
-         	  float: right !important;
-			  margin-left: 5.8823529412% ;
-			  margin-right: 0 !important;
-			  width: 31.1764705882% ;
-         }
-         div.product .summary {
-         	width: 62.9411764706%;
-         }
+        div.product .images
+        {
+            float: right !important;
+
+            width: 31.1764705882% ;
+            margin-right: 0 !important;
+            margin-left: 5.8823529412% ;
+        }
+        div.product .summary
+        {
+            width: 62.9411764706%;
+        }
     }
 }
 
-.img_traje
-{
-padding: 10px 20px 10px 10px;
-}
-
-.diseno_traje 
+.diseno_traje
 {
     display: table-cell;
-    width: 24%;
-    vertical-align: middle;
+
+    width: 70%;
+
+    vertical-align: top;
+    img
+    {
+        width: 100%;
+    }
 }
 
-.piesas{
-border: 1px solid #a6a8a7
+.diseno_atributos
+{
+    display: table-cell;
+
+    width: 28%;
+
+    vertical-align: top;
+    img,
+    img.ui.rounded.image
+    {
+        display: inline-block;
+
+        margin: 0 0 5px;
+
+        border-radius: 0;
+    }
+  .woocommerce-main-image
+    {
+        display: block;
+        margin-bottom: 0 !important;
+    }
 }
 
+.single-product  div.product  .images > .woocommerce-main-image
+{
+    display: none !important;
+}
+
+.products{
+	.product-description-custom{
+		display: none;
+	}
+}

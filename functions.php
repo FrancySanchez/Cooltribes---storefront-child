@@ -92,7 +92,7 @@ function my_custom_scripts() {
 add_action( 'wp_enqueue_scripts', 'my_custom_scripts' );
 /*-----  End of Agregando archivo JS donde estan los scripts  ------*/
 /*==============================================
-=            Agregando modal window            =
+=            Agregando modal window al archivo de productos           =
 ==============================================*/
 function agregando_modal_window_producto() {
 	add_action( 'woocommerce_after_main_content', 'custom_modal_window_producto' );
@@ -113,7 +113,21 @@ function custom_modal_window_producto() {
 	</div>	
 	<?php
 }
-/*-----  End of Agregando modal window  ------*/
+/*-----  End of Agregando modal window al archivo de productos ------*/
+
+/*================================================================================
+=            Agregando descripcion debajo de los productos en archivo            =
+================================================================================*/
+
+
+add_action( 'woocommerce_after_shop_loop_item_title', 'my_add_short_description', 9 );
+function my_add_short_description() {
+	  echo '<div class="product-description-custom">' . get_the_excerpt() . '</div>';
+}
+
+/*-----  End of Agregando descripcion debajo de los productos en archivo  ------*/
+
+
 
 /*=====================================================
 =            remove single product sidebar            =
@@ -133,48 +147,63 @@ add_action( 'get_header', 'remove_storefront_sidebar' );
 /*=================================================================
 =            Agregando imagenes al preview de producto            =
 =================================================================*/
-
 function agregar_imagenes_al_preview_de_producto() {
-
 	add_action( 'woocommerce_product_thumbnails', 'html_para_imagenes_del_preview' );
 }
 add_action( 'init', 'agregar_imagenes_al_preview_de_producto' );
-
 function html_para_imagenes_del_preview() {
-	//Aqui van las imagenes del preview
 	?>
-	<div class="js-previewImagenes">
-		Suit image
+		
+	<div class= "diseno_traje">
+	<?php
 
-		<img class="img_traje" src="<?php echo get_stylesheet_directory_uri(); ?>/img/Traje.jpg" >
-		<div class="diseno_traje">
-		  Jacket
-		<ul>
-			<li><img class="piesas" src="http://placehold.it/100x100"></li>
-			<li><img src="http://placehold.it/100x100"></li>
-			<li><img src="http://placehold.it/100x100"></li>
-		</ul>
-			
-		</div>
-		<div class="diseno_traje">
-		  Hose
-		<ul>
-			<li><img class="piesas" src="http://placehold.it/100x100"></li>
-			<li><img src="http://placehold.it/100x100"></li>
-			<li><img src="http://placehold.it/100x100"></li>
-		</ul>
-			
-		</div>
+	//ref 1: https://wordpress.org/support/topic/display-category-image-on-single-product-page
+	// Ref 2: http://stackoverflow.com/questions/20777929/woocommerce-how-do-i-get-the-most-top-level-category-of-the-current-product-ca
+
+	global $post;
+	$prod_terms = get_the_terms( $post->ID, 'product_cat' );
+	foreach ($prod_terms as $prod_term) {
+
+
+
+	    // gets product cat id
+	    $product_cat_id = $prod_term->term_id;
+
+
+	    // gets an array of all parent category levels
+	    $product_parent_categories_all_hierachy = get_ancestors( $product_cat_id, 'product_cat' );  
+
+	    // This cuts the array and extracts the last set in the array
+	    $last_parent_cat = array_slice($product_parent_categories_all_hierachy, -1, 1, true);
+	    foreach($last_parent_cat as $last_parent_cat_value){
+	        // $last_parent_cat_value is the id of the most top level category, can be use whichever one like
+	          $category_thumbnail = get_woocommerce_term_meta($last_parent_cat_value, 'thumbnail_id', true);
+			  $image = wp_get_attachment_url($category_thumbnail);
+			  echo '<img class="absolute category-image" src="'.$image.'">';
+
+	    }
+	}
+	?>
 	</div>
 
+    <div class=" js-previewImagenes diseno_atributos">
+    	
+	</div>
 	<?php
+
 }
-
-
-
 /*-----  End of Agregando imagenes al preview de producto  ------*/
 
+/*===================================================================================
+=            Quitando los productos relacionados en la vista de producto            =
+===================================================================================*/
+// REF: http://docs.woothemes.com/document/remove-related-posts-output/
 
+function wc_remove_related_products( $args ) {
+	return array();
+}
+add_filter('woocommerce_related_products_args','wc_remove_related_products', 10); 
 
+/*-----  End of Quitando los productos relacionados en la vista de producto  ------*/
 
 
