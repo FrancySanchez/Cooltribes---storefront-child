@@ -33,22 +33,19 @@
     }
     .main-navigation ul.menu > li > a
     {
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 600;
-
         padding: 1em;
-
         color: white;
     }
     ul li
     {
         display: table-cell;
-
         text-align: right;
         vertical-align: middle;
-
         border-left: 1px;
     }
+
     .site-header-cart .cart-contents
     {
         padding: 20px 40px 20px;
@@ -56,15 +53,12 @@
     .site-header-cart .cart-contents:after
     {
         line-height: 66px;
-
         right: 19px;
     }
     .secondary-navigation .menu a
     {
         font-weight: 400;
-
         padding: 19px 20px 10px;
-
         color: #d2d3d7;
     }
 }
@@ -85,7 +79,6 @@
     ul.menu li.current-menu-item > a
     {
         padding-bottom: 2px;
-
         color: #000;
         border-bottom: 3px solid #11cb9a;
     }
@@ -95,11 +88,20 @@
     color: #11cb9a;
 }
 
-.main-navigation ul,
+.main-navigation ul
+{
+    padding: 11px 34px 8px;
+}
+.main-navigation ul.menu > li > a {
+  padding: 0 10px 40px;
+}
+
+
 .secondary-navigation ul
 {
-    padding: 10px 0 10px;
+    padding: 10px 10px 10px;
 }
+
 a:focus
 {
     outline: 0;
@@ -109,4 +111,18 @@ a:focus
   max-width: 74.141em;
   margin-left: auto;
   margin-right: auto;
+}
+.woocommerce-active .site-header .col-full {
+  margin: 2px 0px 4px 169px;
+}
+
+
+.site-header .site-logo-link img {
+  margin: 0px 0px 0px -90px;
+}
+
+@media screen and (max-width: 640px){
+
+
+
 }

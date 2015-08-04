@@ -207,3 +207,9 @@ add_filter('woocommerce_related_products_args','wc_remove_related_products', 10)
 /*-----  End of Quitando los productos relacionados en la vista de producto  ------*/
 
 
+add_action( 'init', 'jk_remove_woo_wc_breadcrumbs' );
+function jk_remove_woo_wc_breadcrumbs() {
+   
+		remove_action( 'storefront_content_top', 'woocommerce_breadcrumb', 	10 );
+   
+}
