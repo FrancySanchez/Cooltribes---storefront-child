@@ -222,11 +222,14 @@ input[type='submit'],
   border-bottom: none;
 }
 
-
+/*---------------------responsive design------------------*/
 
 @media screen and (max-width: 640px){
 
-
+.columna25 {
+  display: block;
+  width: 100%;
+}
 
 }
 

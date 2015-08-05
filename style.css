@@ -48,6 +48,16 @@
   .site-header-cart,
   .site-logo-anchor {
     margin-bottom: 0; } }
+/*---------------------responsive design------------------*/
+@media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_header\.scss}line{font-family:\0000359}}
+  .site-header {
+    padding: 0px;
+    margin-bottom: 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_header\.scss}line{font-family:\0000364}}
+  button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, .button:focus, .added_to_cart:focus {
+    outline: 2px solid #EAF0EF; } }
 /**
 *
 * _navigation
@@ -55,100 +65,118 @@
 **/
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\000036}}
 .menu_top {
-  background-color: #000;
-  z-index: 9999;
   position: fixed;
-  left: 0;
+  z-index: 9999;
   top: 0;
-  width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000315}}
+  left: 0;
+  width: 100%;
+  background-color: #000; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000316}}
   .menu_top .col-full {
     max-width: 80.141em;
     margin-right: auto;
     margin-left: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000322}}
   .menu_top a {
     color: #d2d3d7; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000326}}
   .menu_top ul.menu {
     display: inline-block;
     float: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000331}}
   .menu_top .main-navigation {
     padding-top: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000335}}
   .menu_top .main-navigation ul.menu > li > a {
     font-size: 12px;
     font-weight: 600;
     padding: 1em;
     color: white; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000344}}
   .menu_top ul li {
     display: table-cell;
     text-align: right;
     vertical-align: middle;
-    border-left: 1px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000349}}
+    border-left: 1px;
+    text-align: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000355}}
   .menu_top .site-header-cart .cart-contents {
     padding: 20px 40px 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000359}}
   .menu_top .site-header-cart .cart-contents:after {
     line-height: 66px;
     right: 19px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000365}}
   .menu_top .secondary-navigation .menu a {
     font-weight: 400;
     padding: 19px 20px 10px;
     color: #d2d3d7; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000373}}
+  .menu_top .button {
+    border-color: #11cb9a;
+    background-color: #11cba5;
+    margin: 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000381}}
 .secondary-navigation {
   margin: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000386}}
 .main-navigation a {
   color: #000; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000393}}
 .primary-navigation ul.menu li.current-menu-item > a {
   padding-bottom: 2px;
   color: #000;
   border-bottom: 3px solid #11cb9a; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\00003100}}
 .main-navigation ul li a:hover {
   color: #11cb9a; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\00003105}}
 .main-navigation ul {
   padding: 11px 34px 8px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\00003109}}
 .main-navigation ul.menu > li > a {
   padding: 0 10px 40px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\00003115}}
 .secondary-navigation ul {
   padding: 10px 10px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\00003120}}
 a:focus {
   outline: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\00003125}}
 .col-full {
   max-width: 74.141em;
-  margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-left: auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\00003115}}
-.woocommerce-active .site-header .col-full {
-  margin: 2px 0px 4px 169px; }
+/*---------------------responsive design------------------*/
+@media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\00003136}}
+  .woocommerce-active .site-header .main-navigation {
+    float: none;
+    width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\00003120}}
-.site-header .site-logo-link img {
-  margin: 0px 0px 0px -90px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\00003142}}
+  .menu_top {
+    display: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\00003147}}
+  .main-navigation button {
+    padding: 17px;
+    border-color: #11cb9a;
+    background-color: #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_navigation\.scss}line{font-family:\00003155}}
+  .nof_logo {
+    padding: 30px 40px 0px; } }
 /**
 *
 * _content
@@ -314,6 +342,12 @@ input[type='submit'],
 .hentry {
   border-bottom: none; }
 
+/*---------------------responsive design------------------*/
+@media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003229}}
+  .columna25 {
+    display: block;
+    width: 100%; } }
 /**
 *
 * Footer

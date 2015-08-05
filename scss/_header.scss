@@ -51,3 +51,18 @@
         margin-bottom: 0;
     }
 }
+
+
+/*---------------------responsive design------------------*/
+@media screen and (max-width: 640px){
+
+.site-header {
+  padding: 0px;
+  margin-bottom: 0px; 
+}
+
+button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, .button:focus, .added_to_cart:focus {
+  outline: 2px solid #EAF0EF;
+}
+
+}

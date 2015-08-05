@@ -5,13 +5,14 @@
 **/
 .menu_top
 {
-    background-color: #000;
-    z-index: 9999;
     position: fixed;
-    left: 0;
+    z-index: 9999;
     top: 0;
+    left: 0;
+
     width: 100%;
 
+    background-color: #000;
     .col-full
     {
         max-width: 80.141em;
@@ -35,17 +36,22 @@
     {
         font-size: 12px;
         font-weight: 600;
+
         padding: 1em;
+
         color: white;
     }
     ul li
     {
         display: table-cell;
+
         text-align: right;
         vertical-align: middle;
-        border-left: 1px;
-    }
 
+        border-left: 1px;
+
+        text-align: left;
+    }
     .site-header-cart .cart-contents
     {
         padding: 20px 40px 20px;
@@ -53,14 +59,22 @@
     .site-header-cart .cart-contents:after
     {
         line-height: 66px;
+
         right: 19px;
     }
     .secondary-navigation .menu a
     {
         font-weight: 400;
+
         padding: 19px 20px 10px;
+
         color: #d2d3d7;
     }
+.button{
+      border-color: #11cb9a;
+  background-color: #11cba5;
+  margin: 10px;
+}
 }
 
 
@@ -92,8 +106,9 @@
 {
     padding: 11px 34px 8px;
 }
-.main-navigation ul.menu > li > a {
-  padding: 0 10px 40px;
+.main-navigation ul.menu > li > a
+{
+    padding: 0 10px 40px;
 }
 
 
@@ -107,22 +122,39 @@ a:focus
     outline: 0;
 }
 
-.col-full {
-  max-width: 74.141em;
-  margin-left: auto;
-  margin-right: auto;
-}
-.woocommerce-active .site-header .col-full {
-  margin: 2px 0px 4px 169px;
+.col-full
+{
+    max-width: 74.141em;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
-.site-header .site-logo-link img {
-  margin: 0px 0px 0px -90px;
-}
+/*---------------------responsive design------------------*/
+@media screen and (max-width: 640px)
+{
+    .woocommerce-active .site-header .main-navigation
+    {
+        float: none;
 
-@media screen and (max-width: 640px){
+        width: 100%;
+    }
+    .menu_top
+    {
+        display: none;
+    }
+    .main-navigation{
+        button
+        {
+            padding: 17px;
 
+            border-color: #11cb9a;
+            background-color: #000;
+        }
+   }
+    .nof_logo{
+        padding:30px 40px 0px;
 
+    }
 
 }

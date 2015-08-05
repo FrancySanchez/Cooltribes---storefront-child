@@ -24,7 +24,7 @@ add_action( 'storefront_header', 'storefront_display_custom_logo', 20 );
 }
 function storefront_display_custom_logo() {
 ?>
-<div class="my clase">
+<div class="nof_logo">
 	<?php do_action( 'custom_storefront_skip_links' ); ?>
 	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-logo-link" rel="home">
 	<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.jpg" alt="<?php echo get_bloginfo( 'name' ); ?>" />
@@ -55,6 +55,7 @@ function agrupando_secondaryMenu_and_cart_y_moviendolos_al_top() {
 	add_action( 'custom_cart', 'storefront_header_cart' );
 }
 add_action( 'init', 'agrupando_secondaryMenu_and_cart_y_moviendolos_al_top' );
+
 function custom_before_header() {
 	?>
 	<div class="menu_top">
@@ -66,6 +67,7 @@ function custom_before_header() {
 	<?php
 }
 /*-----  End of Agrupando el secondary menu y el icono del carrito en un <div>  ------*/
+
 /*================================================
 =            Desactivando los reviews            =
 ================================================*/
@@ -76,6 +78,7 @@ add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
 	 return $tabs;
 }
 /*-----  End of Desactivando los reviews  ------*/
+
 /*====================================================================
 =            Agregando archivo JS donde estan los scripts            =
 ====================================================================*/
@@ -91,6 +94,7 @@ function my_custom_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'my_custom_scripts' );
 /*-----  End of Agregando archivo JS donde estan los scripts  ------*/
+
 /*==============================================
 =            Agregando modal window al archivo de productos           =
 ==============================================*/
@@ -118,8 +122,6 @@ function custom_modal_window_producto() {
 /*================================================================================
 =            Agregando descripcion debajo de los productos en archivo            =
 ================================================================================*/
-
-
 add_action( 'woocommerce_after_shop_loop_item_title', 'my_add_short_description', 9 );
 function my_add_short_description() {
 	  echo '<div class="product-description-custom">' . get_the_excerpt() . '</div>';
@@ -128,11 +130,9 @@ function my_add_short_description() {
 /*-----  End of Agregando descripcion debajo de los productos en archivo  ------*/
 
 
-
 /*=====================================================
 =            remove single product sidebar            =
 =====================================================*/
-
 function remove_storefront_sidebar() {
 	if ( is_product() ) {
 		remove_action( 'storefront_sidebar', 'storefront_get_sidebar',			10 );
@@ -185,9 +185,7 @@ function html_para_imagenes_del_preview() {
 	}
 	?>
 	</div>
-
-    <div class=" js-previewImagenes diseno_atributos">
-    	
+    <div class=" js-previewImagenes diseno_atributos">	
 	</div>
 	<?php
 
@@ -213,3 +211,14 @@ function jk_remove_woo_wc_breadcrumbs() {
 		remove_action( 'storefront_content_top', 'woocommerce_breadcrumb', 	10 );
    
 }
+
+function prueba()
+{
+	
+    	echo 'Hola mundo';
+	
+}
+add_action( 'woocommerce_after_main_content', 'prueba' );
+
+
+
