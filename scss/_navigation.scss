@@ -129,6 +129,11 @@ a:focus
     margin-left: auto;
 }
 
+.cart_list.product_list_widget{
+    max-height: 200px;
+  overflow: scroll;
+
+} 
 
 /*---------------------responsive design------------------*/
 @media screen and (max-width: 640px)

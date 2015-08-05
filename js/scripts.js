@@ -30,6 +30,7 @@
         $("#jquery-ui-product-dialog").dialog({
             width: 700,
             closeText: "X",
+            modal:true,
 
             close: function(e) {
 
