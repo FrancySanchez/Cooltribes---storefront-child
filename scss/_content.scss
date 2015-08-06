@@ -115,8 +115,9 @@ input[type='submit'],
     background-color: rgba(0,0,0,.5);
 }
 
-.ui-dialog {
-   z-index:1010;
+.ui-dialog
+{
+    z-index: 1010;
 }
 
 /*------------- PAGE Anzug designen -------------------*/
@@ -246,11 +247,42 @@ input[type='submit'],
     border-bottom: none;
 }
 
+/*---------------------Formulario-------------------------*/
+.form_column
+{
+    display: table-cell;
+
+    width: 28%;
+
+    vertical-align: top;
+    
+    label
+    {
+        border: 1px solid #d1d3d4;
+    }
+}
+.formhora_column
+{
+    display: table-cell;
+    width: 40%;
+    vertical-align: top;
+}
+
+
+
 /*---------------------responsive design------------------*/
 
 @media screen and (max-width: 640px)
 {
     .columna25
+    {
+        display: block;
+
+        width: 100%;
+    }
+
+
+    .form_column
     {
         display: block;
 
