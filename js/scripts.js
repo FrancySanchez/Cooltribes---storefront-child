@@ -104,4 +104,20 @@
 
 	// Moviendo primera imagen del producto al preview
 	$('.single-product .images > a').appendTo('.js-previewImagenes');
+
+//-------------------------------Caledario date---------------------------------
+$(document).ready(function(){
+   $('.date__calendar').datepicker({
+        inline: true,
+        altField: '.date__input',
+        autoSize: true,
+        dateFormat: "dd.mm.yy"
+    });
+
+    $('.date__input').change(function(){
+        $('.date__calendar').datepicker('setDate', $(this).val());
+    });
+});
+
+
 })(jQuery);

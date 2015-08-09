@@ -361,30 +361,80 @@ input[type='submit'],
 .hentry {
   border-bottom: none; }
 
-/*---------------------Formulario-------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003251}}
+/*---------------PAGINA PARA SOLICITAR UNA CITA-----------------------*/
+/*---------------------Formulario-------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003255}}
 .form_column {
   display: table-cell;
-  width: 28%;
+  width: 33.333%;
   vertical-align: top; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003259}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003262}}
   .form_column label {
-    border: 1px solid #d1d3d4; }
+    display: block;
+    width: 95%;
+    padding: 5px 10px;
+    color: white;
+    border: 1px solid #d1d3d4;
+    background-color: #000; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003264}}
-.formhora_column {
-  display: table-cell;
-  width: 40%;
-  vertical-align: top; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003275}}
+.table {
+  margin: 5px 0 1.618em;
+  padding: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003279}}
+  .table td {
+    padding: 1.29em 1.387em; }
 
-/*---------------------responsive design------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003284}}
+.table .table-titule {
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  background-color: #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003296}}
+.ui-datepicker-title {
+  font-weight: bold;
+  padding: 10px 20px 20px 20px;
+  background-color: #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003305}}
+.ui-datepicker-month,
+.ui-datepicker-year {
+  padding: 10px;
+  color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003313}}
+.ui-datepicker-prev {
+  float: right;
+  padding: 10px 20px 20px 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003320}}
+.ui-datepicker-next {
+  float: right;
+  padding: 10px; }
+
+/*---------------------Calendar--------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003332}}
+.date__calendar table thead th,
+.date__calendar table td,
+.date__calendar table th {
+  padding: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003340}}
+.date__input {
+  display: none; }
+
+/*-------------------------------------------------------------------*/
+/*---------------------responsive design----------------------------*/
 @media screen and (max-width: 640px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003277}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003353}}
   .columna25 {
     display: block;
     width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003285}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/test\/wp-content\/themes\/storefront-child\/scss\/_content\.scss}line{font-family:\00003361}}
   .form_column {
     display: block;
     width: 100%; } }
