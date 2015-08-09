@@ -293,6 +293,36 @@ input[type='submit'],
     background-color: #000;
 }
 
+
+
+
+/*---------------------Calendar--------------------------------------*/
+
+.date__calendar
+{
+    table thead th,
+    table td,
+    table th
+    {
+        padding: 10px;
+    }
+    a{
+        color: #60646c;
+        padding: 9px; 
+    }
+    table td {
+         padding: 10px 5px;
+     }
+}
+
+//.date__calendar table td {
+  //  padding: 10px 5px;
+//))}
+
+.date__input
+{
+    display: none;
+}
 .ui-datepicker-title
 {
     font-weight: bold;
@@ -324,22 +354,9 @@ input[type='submit'],
     padding: 10px;
 }
 
-
-/*---------------------Calendar--------------------------------------*/
-
-.date__calendar
-{
-    table thead th,
-    table td,
-    table th
-    {
-        padding: 10px;
-    }
-}
-
-.date__input
-{
-    display: none;
+.ui-state-active{
+    border: 1px solid #11cb9a;
+    background-color: #11cb9a;
 }
 
 /*-------------------------------------------------------------------*/
